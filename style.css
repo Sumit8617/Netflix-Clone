@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    color: white;
+}
+
+html,
+body {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+
+.main {
+    background: url(image/bg.jpg) no-repeat top center/cover;
+    height: 104vh;
+    width: 100%;
+    
+}
+
+.main>.container {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(0deg, #000000f4, #00000067, #000000f4);
+}
+
+.logo,
+.button {
+    cursor: pointer;
+}
+
+.logo>span>img {
+    width: 10vw;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 9.5vw;
+}
+
+.menu {
+    display: flex;
+    gap: 1vw;
+}
+
+#languagebtn {
+    color: white;
+    background-color: #00000000;
+    font-size: 1.5rem;
+    font-weight: 500;
+    border-radius: 0.4rem;
+    padding: 0.4vw 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.3vw;
+    border: 1px solid #7b7b7b;
+}
+
+nav>.menu>.button:nth-child(2) {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 0.4rem;
+    background-color: red;
+    padding: 0.4vw 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+nav>.menu>.button:nth-child(2):hover {
+    background-color: #b30000;
+}
+
+.data {
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+}
+
+.data>h1 {
+    font-size: 5.5rem;
+    font-weight: 900;
+}
+
+.data>p:nth-child(2) {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.data>p:nth-child(4) {
+    font-size: 1.7rem;
+}
+
+.data>.databox {
+    display: flex;
+    gap: 0.7vw;
+}
+
+.data>.databox>input {
+    background-color: #00000000;
+    color: white;
+    font-size: 1.7rem;
+    font-weight: 500;
+    padding: 0.8vw;
+    width: 22vw;
+    border-color: #b3b3b3;
+    border-radius: 0.4rem;
+}
+
+#loginbox {
+    font-weight: 700;
+    border-radius: 0.4rem;
+    font-size: 2.5rem;
+    background-color: red;
+    padding: 0.8vw;
+    width: 14vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s;
+}
+
+#loginbox:hover {
+    background-color: #b30000;
+}
+
+.line1 {
+    height: 7vw;
+    width: 100%;
+    border-top-left-radius: 100% 95%;
+    border-top-right-radius: 100% 95%;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+    position: absolute;
+    top: 97vh;
+}
+
+.line {
+    height: 7vw;
+    width: 100%;
+    border-top-left-radius: 100% 90%;
+    border-top-right-radius: 100% 90%;
+    background: radial-gradient(50% 500% at 50% -420%, #4061e766 80%, #0000001a 100%), #000000;
+    position: absolute;
+    top: 97.5vh;
+}
+
+.main2 {
+    background-color: black;
+    position: relative;
+    top: 5rem;
+}
+
+.plans>h1 {
+    font-size: 2.7rem;
+    z-index: 10;
+}
+
+.plans {
+    padding: 1.5vw 9.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.planboxes {
+    display: flex;
+    gap: 1vw;
+}
+
+.planboxes>.planbox {
+    padding: 2vw;
+    font-size: 1.7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    background: linear-gradient(180deg, #7a1f48 0%, #210d0e 99.51%);
+    width: 20vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.planboxes>.planbox:hover {
+    background: linear-gradient(180deg, #912555 0%, #210d0e 99.51%);
+}
+
+.subscriptions>h1 {
+    font-size: 2.5rem;
+    z-index: 10;
+}
+
+.subscriptions {
+    padding: 1.5vw 9.5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+}
+
+.subscriptionboxes {
+    display: flex;
+    gap: 1vw;
+}
+
+.subscriptionboxes>.subscriptionbox {
+    padding: 2vw;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+    width: 20vw;
+    border-radius: 1vw;
+    cursor: pointer;
+}
+
+.faqs>h1 {
+    font-size: 2.7rem;
+    z-index: 10;
+}
+
+.faqs {
+    padding: 1.5vw 9.5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 1rem;
+}
+
+.faqs>.question {
+    background-color: #303030;
+    text-align: left;
+    padding: 3rem;
+    font-size: 2.1rem;
+    font-weight: 550;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    width: 80%;
+    transition: all 0.3s;
+}
+
+.faqs>.question:hover {
+    background-color: #484848;
+}
+
+.faqs>p {
+    font-size: 1.7rem;
+    margin-top: 3rem;
+}
+
+.faqs>.databox {
+    margin-top: 0.7rem;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.faqs>.databox>input {
+    background-color: #00000000;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 1vw;
+    width: 50vw;
+    border-color: #b3b3b3;
+    border-radius: 0.4rem;
+}
+
+footer {
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    padding: 1.5vw 12vw;
+    gap: 5rem;
+    background-color: black;
+}
+
+footer div {
+    font-size: 1.5rem;
+    color: #d4d4d4;
+}
+
+footer span {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    color: #d4d4d4;
+    cursor: pointer;
+}
+
+footer>.boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+footer>.boxes>.box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+footer>.container>.button {
+    width: 7vw;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        height: 62vh;
+    }
+
+    #languagebtn {
+        font-size: 2vw;
+        font-weight: 500;
+        border-radius: 0.2rem;
+    }
+
+    nav>.menu>.button:nth-child(2) {
+        font-size: 2vw;
+        font-weight: 700;
+        border-radius: 0.2rem;
+    }
+
+    .data {
+        gap: 1rem;
+    }
+
+    .data>h1 {
+        font-size: 2rem;
+        font-weight: 900;
+    }
+
+    .data>p:nth-child(2) {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .data>p:nth-child(4) {
+        font-size: 1rem;
+    }
+
+    .data>.databox {
+        flex-direction: column;
+        gap: 3vw;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .data>.databox>input {
+        font-size: 1rem;
+        font-weight: 500;
+        border-radius: 0.2rem;
+        width: 80vw;
+        padding: 2vw;
+    }
+
+    #loginbox {
+        font-weight: 700;
+        border-radius: 0.2rem;
+        font-size: 1.3rem;
+        width: 12rem;
+        padding: 2vw;
+    }
+
+    .line1 {
+        top: 60vh;
+    }
+
+    .line {
+        top: 60.5vh;
+    }
+
+    .main2 {
+        position: relative;
+        top: 1rem;
+    }
+
+    .plans>h1 {
+        font-size: 1.3rem;
+        z-index: 10;
+    }
+
+    .plans {
+        padding-top: 7vw;
+        gap: 2vw;
+    }
+
+    .planboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .planboxes>.planbox {
+        padding: 5vw;
+        font-size: 1rem;
+        width: 80vw;
+        border-radius: 3vw;
+    }
+
+    .subscriptions>h1 {
+        font-size: 1.3rem;
+        z-index: 10;
+    }
+
+    .subscriptions {
+        padding-top: 7vw;
+        gap: 2vw;
+    }
+
+    .subscriptionboxes {
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .subscriptionboxes>.subscriptionbox {
+        padding: 5vw;
+        font-size: 1rem;
+        width: 80vw;
+        border-radius: 3vw;
+    }
+
+    .faqs>h1 {
+        font-size: 1.3rem;
+    }
+
+    .faqs {
+        padding: 15vw 4vw;
+        gap: 0.7rem;
+    }
+
+    .faqs>.question {
+        padding: 4vw;
+        font-size: 1.3rem;
+        font-weight: 100;
+        width: 100%;
+    }
+
+    .faqs>p {
+        font-size: 1rem;
+        margin-top: 2rem;
+    }
+
+    .faqs>.databox {
+        margin-top: 0.7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 2vw;
+    }
+
+    .faqs>.databox>input {
+        font-size: 1rem;
+        font-weight: 100;
+        padding: 2vw;
+        width: 100%;
+        border-radius: 0.2rem;
+    }
+
+    footer {
+        margin-top: 1rem;
+        gap: 3rem;
+    }
+
+    footer div {
+        font-size: 1rem;
+    }
+
+    footer span {
+        font-size: 1rem;
+    }
+
+    footer>.boxes {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer>.boxes>.box {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer>.container>.button {
+        width: 14vw;
+    }
+}
