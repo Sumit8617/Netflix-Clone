@@ -1,6 +1,8 @@
-# Netflix Clone
+# Netflix Clone - Hosted on Netlify
 
 A responsive Netflix clone built using HTML and CSS. This project replicates the basic layout and styling of the Netflix homepage to practice front-end development skills.
+
+Live Site: [Netflix Clone](https://clonesitebyme.netlify.app/)
 
 ---
 
@@ -48,7 +50,7 @@ This Netflix clone demonstrates how to create a visually appealing, responsive w
 ---
 
 ## Usage
-1. Open the project in a browser by double-clicking the `index.html` file or hosting it on a local server.
+1. Visit the live site: [Netflix Clone](https://clonesitebyme.netlify.app/).
 2. Explore the layout, including the navigation bar, hero section, and content rows.
 
 ---
